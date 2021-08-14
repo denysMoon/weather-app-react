@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Display from './components/Display/Display';
+import Form from './components/Form/Form';
 
 const KEY_CURRENT = process.env.REACT_APP_API_KEY
 
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <Form />
     {
       currentWeather.cod === 200 ? (
         <Display currentWeather={currentWeather} />
