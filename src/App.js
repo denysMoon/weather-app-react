@@ -17,9 +17,9 @@ function App() {
         setLongitude(position.coords.longitude)
       })
 
-      await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${KEY_CURRENT}`)
-      .then(res=>res.json())
-      .then(res=>setCurrentWeather(res))
+      // await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${KEY_CURRENT}`)
+      // .then(res=>res.json())
+      // .then(res=>setCurrentWeather(res))
     }
 
     getCurrentWeather()
@@ -37,6 +37,8 @@ function App() {
         'Nothing'
       )
     }
+
+    <Display currentWeather={currentWeather} />
   
     </div>
   );
