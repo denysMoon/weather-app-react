@@ -2,7 +2,8 @@ const Form = () =>{
     return(
         <div className="wrapper">
             <form action="">
-                form
+                <input type="text"
+                placeholder="Type some place..." />
             </form>
         </div>
     )

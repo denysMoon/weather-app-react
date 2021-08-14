@@ -3,6 +3,9 @@
     justify-content: center;
     padding: 15px;
 }
+
+/* Display */
+
 .display{
     margin-top: 50px;
     min-width: 600px;
@@ -33,6 +36,7 @@
     cursor: pointer;
 }
 .date{
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -48,4 +52,15 @@
 }
 .date p:nth-child(even){
     text-align: right;
+}
+
+/* Form */
+
+input{
+    min-width: 300px;
+    height: 1.5rem;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border-color: lightgrey;
 }
