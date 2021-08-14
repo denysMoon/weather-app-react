@@ -32,3 +32,20 @@
     border: none;
     cursor: pointer;
 }
+.date{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.date p{
+    display: inline-block;
+    width: 45%;
+    height: 150px;
+}
+.date p:nth-child(odd){
+    text-align: left;
+}
+.date p:nth-child(even){
+    text-align: right;
+}
