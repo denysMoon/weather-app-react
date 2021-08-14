@@ -1,7 +1,7 @@
-const Display = () =>{
+const Display = ( { currentWeather } ) =>{
     return(
         <div>
-            Display
+            {JSON.stringify(currentWeather)}
         </div>
     )
 }

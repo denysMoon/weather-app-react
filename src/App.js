@@ -25,11 +25,19 @@ function App() {
     getCurrentWeather()
   },[latitude, longitude])
 
-  console.log(currentWeather)
+  console.log(currentWeather.cod)
 
   return (
     <div className="App">
-      <Display />
+      
+    {
+      currentWeather.cod === 200 ? (
+        <Display currentWeather={currentWeather} />
+      ) : (
+        'Nothing'
+      )
+    }
+  
     </div>
   );
 }
